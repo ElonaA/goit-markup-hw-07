@@ -93,7 +93,8 @@
         background-color: rgba(33, 150, 243, 0.9);
     }
 
-    .project:hover &-overlay {
+    .project:hover &-overlay,
+    .project:focus-within &-overlay {
         transform: translate(-50%, -50%);
     }
 
@@ -142,7 +143,7 @@
     }
 
     &:hover &-content,
-    &:focus &-content {
+    &:focus-within &-content {
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
     }
 }

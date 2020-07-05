@@ -169,7 +169,7 @@ button {
         transform: translateY(-50%);
     }
 
-    &-field:focus-within>.icon {
+    &-field:focus-within>&-icon {
         color: $accent-color;
         fill: $accent-color;
     }

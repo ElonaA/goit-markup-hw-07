@@ -221,7 +221,7 @@
     }
 
     &:hover &-icon,
-    &:focus &-icon {
+    &:focus-within &-icon {
         fill: $accent-color;
         color: $accent-color;
     }
@@ -238,7 +238,7 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus-within &-link {
         border: 1px solid $accent-color;
     }
 }
