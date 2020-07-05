@@ -1,0 +1,8 @@
+@mixin centered-item($align-type : center) {
+    display: flex;
+    align-items: $align-type;
+}
+
+@mixin transitions($type : color) {
+    transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
