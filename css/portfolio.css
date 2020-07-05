@@ -316,6 +316,10 @@ button {
   background-color: none;
 }
 
+*:focus {
+  outline: 1px solid #2196f3;
+}
+
 .logo,
 .logo-header,
 .logo-footer,
@@ -538,7 +542,8 @@ button {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project:hover .portfolio-overlay {
+.project:hover .portfolio-overlay,
+.project:focus-within .portfolio-overlay {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -596,7 +601,7 @@ button {
 }
 
 .project:hover .project-content,
-.project:focus .project-content {
+.project:focus-within .project-content {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }

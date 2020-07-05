@@ -316,6 +316,10 @@ button {
   background-color: none;
 }
 
+*:focus {
+  outline: 1px solid #2196f3;
+}
+
 .logo,
 .logo-header,
 .logo-footer,
@@ -621,7 +625,7 @@ button {
           transform: translateY(-50%);
 }
 
-.form-field:focus-within > .icon {
+.form-field:focus-within > .form-icon {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -941,7 +945,7 @@ button {
 }
 
 .client:hover .client-icon,
-.client:focus .client-icon {
+.client:focus-within .client-icon {
   fill: #2196f3;
   color: #2196f3;
 }
@@ -957,7 +961,8 @@ button {
   margin: auto;
 }
 
-.client:hover, .client:focus {
+.client:hover,
+.client:focus-within .client-link {
   border: 1px solid #2196f3;
 }
 
